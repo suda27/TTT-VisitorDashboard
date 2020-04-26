@@ -26,8 +26,10 @@ export class AppComponent implements OnInit {
         for (let i = 0; i < sortedArray.length; i++) {
           this.setVistorInfo(i, sortedArray);
         }
+        this.count = data.Count;
       }
     });
+
   }
 
   private setVistorInfo(i: number, sortedArray: Visitor[]) {
